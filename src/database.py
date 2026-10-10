@@ -4,7 +4,7 @@ from functools import lru_cache
 from config import settings
 
 client = AsyncMongoClient(settings.database_uri)
-database = client["sample_mflix"]
+database = client[settings.database_name]
 
 async def connect_db():
     await client.admin.command("ping")
