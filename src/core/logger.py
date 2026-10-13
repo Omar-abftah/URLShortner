@@ -1,6 +1,6 @@
 import logging
 import logging.config
-from config import settings
+from core.config import settings
 
 LOG_LEVEL = settings.log_level.upper()
 
