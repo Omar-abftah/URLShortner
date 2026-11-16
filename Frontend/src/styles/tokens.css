@@ -1,0 +1,64 @@
+:root {
+  --color-putty: #c4c3b6;
+  --color-ink: #000000;
+  --color-bone: #e7e5e4;
+  --color-chalk: #ebebeb;
+  --color-vellum: #dfdcd5;
+  --color-graphite: #595855;
+  --color-ash: #808080;
+  --color-paper: #ffffff;
+  --color-error: #8a1c1c;
+
+  --surface-composer: #000000;
+  --text-composer: #ffffff;
+  --muted-composer: #8a8884;
+  --border-composer: rgba(255, 255, 255, 0.14);
+
+  --surface-showcase: #0c0c0b;
+  --text-showcase: #f4f2ed;
+  --muted-showcase: #8f8d88;
+
+  --font-davinci: "Playfair Display", "Canela", Georgia, serif;
+  --font-helvetica-now: "Helvetica Now", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --text-body-sm: 15px;
+  --text-subheading: 22px;
+  --text-heading-sm: 26px;
+  --text-heading: 43px;
+  --text-heading-lg: 52px;
+  --text-display: clamp(120px, 26vw, 374px);
+
+  --spacing-4: 4px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-96: 96px;
+
+  --radius-sm: 2px;
+  --radius-lg: 9px;
+  --radius-3xl: 28.8px;
+}
+
+:root[data-theme="dark"] {
+  --color-putty: #0f0f0e;
+  --color-ink: #f4f2ed;
+  --color-bone: #171715;
+  --color-chalk: #1e1e1b;
+  --color-vellum: #2a2926;
+  --color-graphite: #9e9b93;
+  --color-ash: #6e6c66;
+  --color-paper: #0f0f0e;
+  --color-error: #ff7b7b;
+
+  --surface-composer: #1b1b18;
+  --text-composer: #f4f2ed;
+  --muted-composer: #8f8d88;
+  --border-composer: #33322e;
+
+  --surface-showcase: #151513;
+  --text-showcase: #f4f2ed;
+  --muted-showcase: #9e9b93;
+}

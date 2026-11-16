@@ -1,0 +1,17 @@
+.btn {
+  border-radius: var(--radius-3xl);
+  padding: 9px 17px;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.15s;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn:hover:not(:disabled) { opacity: 0.8; }
+
+.btn--primary { background: var(--color-ink); color: var(--color-paper); }
+.btn--secondary { background: transparent; color: var(--color-ink); border-color: var(--color-ink); }
+.btn--inverse { background: var(--text-composer); color: var(--surface-composer); font-weight: 500; }
+.btn--ghost { background: transparent; color: var(--color-graphite); padding-inline: 10px; }
+.btn--danger { background: transparent; color: var(--color-error); border-color: var(--color-error); }

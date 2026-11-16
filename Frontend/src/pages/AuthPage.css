@@ -1,0 +1,8 @@
+.auth-page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 56px - 62px);
+  padding: var(--spacing-40) var(--spacing-20);
+  background: var(--color-graphite);
+}
+.auth-page .auth-card { background: var(--color-ink); }
