@@ -8,8 +8,10 @@ from modules.urls.domain.url_rules import is_expired
 from modules.urls.infrastructure.url_document import Url
 
 
-async def list_urls(limit: int = 20, after: PydanticObjectId | None = None) -> tuple[list[Url], PydanticObjectId | None]:
-    query = Url.find(Url.id < after) if after else Url.find()
+async def list_urls(owner_id: str, limit: int = 20, after: PydanticObjectId | None = None) -> tuple[list[Url], PydanticObjectId | None]:
+    query = Url.find(Url.owner_id == owner_id)
+    if after:
+        query = query.find(Url.id < after)
     docs = await query.sort(-Url.id).limit(limit + 1).to_list()
     has_more = len(docs) > limit
     docs = docs[:limit]
